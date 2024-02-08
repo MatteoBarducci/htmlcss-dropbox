@@ -1,0 +1,66 @@
+/*------------
+    RESET
+-------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*------------
+    GENERAL
+-------------*/
+body{
+    font-family: "Open Sans", sans-serif;
+}
+/*------------
+    HEADER
+-------------*/
+header{
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+header a{
+    margin: 0 10px 0 10px;
+    vertical-align: middle;
+}
+
+.header-left > img{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+a{
+    text-decoration: none;
+    color: #464646;
+}
+
+button{
+    background-color: #0D61FF;
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    border: none;
+    padding: 8px;
+}
+/*------------
+    MAIN
+-------------*/
+main{
+    background-color: #B4D0E7;
+    padding: 70px;
+}
+
+.container-1200{
+    max-width: 63%;
+    display: flex;
+    margin: auto;
+    border: dashed;
+}
+
+h1{
+    font-size: 50px;
+}
