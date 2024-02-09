@@ -1,5 +1,5 @@
 /*------------
-    RESET
+RESET
 -------------*/
 *{
     margin: 0;
@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 /*------------
-    GENERAL
+GENERAL
 -------------*/
 body{
     font-family: "Open Sans", sans-serif;
@@ -17,7 +17,7 @@ body{
     color: black;
 }
 /*------------
-    HEADER
+HEADER
 -------------*/
 header{
     background-color: white;
@@ -54,7 +54,7 @@ button{
     padding: 8px;
 }
 /*------------
-    HERO
+HERO
 -------------*/
 #hero-section{
     background-color: #B4D0E7;
@@ -104,11 +104,12 @@ h1{
     max-width: 100%;
 }
 /*------------
-    MAIN
+MAIN
 -------------*/
 .container-1000{
     max-width: 1000px;
     margin: auto;
+    box-sizing: border-box;
 }
 
 h2{
@@ -123,13 +124,26 @@ section input{
 .input-special{
     margin-left: 40px;
 }
+/*------------
+BUSINESS PLAN
+-------------*/
+h3{
+    font-size: larger;
+    margin-top: 20px;
+}
 
-.col-33 > *{
-    border: solid #464646;
-    padding: 6px 20px;
+.col-33{
+    max-width: 30%;
+    border: 1px solid #D0D0D3;
+}
+
+.col-33 > *, .enterprise > *{
+    padding: 6px 30px;
 }
 
 .business-plan{
+    display: flex;
+    justify-content: space-between;
     color: #464646;
 }
 
@@ -139,6 +153,8 @@ section input{
 
 .business-plan-title{
     text-align: center;
+    border-bottom: 1px solid #D0D0D3;
+    padding: 5px;
 }
 
 .business-plan-main{
@@ -146,6 +162,25 @@ section input{
     flex-direction: column;
     gap: 20px;
     border-top: none;
+}
+
+.fa-check{
+    color: blue;
+}
+
+.enterprise{
+    margin-top: 40px;
+    border: 1px solid #D0D0D3;
+}
+
+.enterprise-button{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#long-btn{
+    width: 25%;
 }
 
 
