@@ -12,6 +12,10 @@
 body{
     font-family: "Open Sans", sans-serif;
 }
+
+.fa-solid{
+    color: black;
+}
 /*------------
     HEADER
 -------------*/
@@ -52,7 +56,7 @@ button{
 /*------------
     HERO
 -------------*/
-section:first-child{
+#hero-section{
     background-color: #B4D0E7;
     padding: 70px;
     margin-bottom: 100px;
@@ -102,5 +106,46 @@ h1{
 /*------------
     MAIN
 -------------*/
+.container-1000{
+    max-width: 1000px;
+    margin: auto;
+}
+
+h2{
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+
+section input{
+    margin-bottom: 45px;
+}
+
+.input-special{
+    margin-left: 40px;
+}
+
+.col-33 > *{
+    border: solid #464646;
+    padding: 6px 20px;
+}
+
+.business-plan{
+    color: #464646;
+}
+
+.black{
+    color: black;
+}
+
+.business-plan-title{
+    text-align: center;
+}
+
+.business-plan-main{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-top: none;
+}
 
 
