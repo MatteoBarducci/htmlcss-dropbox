@@ -23,15 +23,18 @@ header{
     padding: 15px;
 }
 
-header a{
-    margin: 0 10px 0 10px;
-    vertical-align: middle;
+.header-left{
+    display: flex;
+    align-items: center;
 }
 
-.header-left > img{
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+.header-right{
+    display: flex;
+    align-items: center;
+}
+
+header a{
+    margin: 0 10px 0 10px;
 }
 
 a{
@@ -56,11 +59,43 @@ main{
 
 .container-1200{
     max-width: 63%;
-    display: flex;
     margin: auto;
-    border: dashed;
 }
 
 h1{
-    font-size: 50px;
+    font-size: 45px;
+    display: block;
+}
+
+.hero{
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: -150px;
+    border: dashed;
+}
+
+.hero-left{
+    display: flex;
+    flex-direction: column;
+    max-width: 35%;
+    border: dashed;
+    color: #464646;
+}
+
+.hero-left *:not(p){
+    margin-top: 20px;
+}
+
+.fa-arrow-down{
+    color: black;
+    font-size: 40px;
+}
+
+.hero-right{
+    max-width: 65%;
+    border: dashed;
+}
+
+.hero-right img{
+    max-width: 100%;
 }
