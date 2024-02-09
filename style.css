@@ -16,6 +16,30 @@ body{
 .fa-solid{
     color: black;
 }
+
+.black{
+    color: black;
+}
+
+img{
+    max-width: 100%;
+}
+
+button{
+    background-color: #0D61FF;
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    border: none;
+    padding: 8px;
+}
+
+button:hover{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: 0.5s;
+}
+
+
 /*------------
 HEADER
 -------------*/
@@ -39,19 +63,27 @@ header{
 
 header a{
     margin: 0 10px 0 10px;
+    --b: 0.1em;   /* the thickness of the line */
+    --c: #0D61FF; /* the color */
+    
+    color: #0000;
+    padding-block: var(--b);
+    background: 
+        linear-gradient(var(--c) 50%,#000 0) 0% calc(100% - var(--_p,0%))/100% 200%,
+        linear-gradient(var(--c) 0 0) 0% var(--_p,0%)/var(--_p,0%) var(--b) no-repeat;
+    -webkit-background-clip: text,padding-box;
+            background-clip: text,padding-box;
+    transition: .3s var(--_s,0s) linear,background-size .3s calc(.3s - var(--_s,0s));
+}
+
+
+header a:hover{
+    --_p: 100%;
+    --_s: .25s;
 }
 
 a{
     text-decoration: none;
-    color: #464646;
-}
-
-button{
-    background-color: #0D61FF;
-    font-family: "Open Sans", sans-serif;
-    color: white;
-    border: none;
-    padding: 8px;
 }
 /*------------
 HERO
@@ -69,7 +101,7 @@ HERO
 }
 
 h1{
-    font-size: 45px;
+    font-size: 46px;
     display: block;
 }
 
@@ -82,7 +114,7 @@ h1{
 .hero-left{
     display: flex;
     flex-direction: column;
-    max-width: 35%;
+    max-width: 30%;
     color: #464646;
 }
 
@@ -97,19 +129,14 @@ h1{
 }
 
 .hero-right{
-    max-width: 65%;
-}
-
-.hero-right img{
-    max-width: 100%;
+    max-width: 70%;
 }
 /*------------
-MAIN
+FIRST SECTION
 -------------*/
 .container-1000{
     max-width: 1000px;
     margin: auto;
-    box-sizing: border-box;
 }
 
 h2{
@@ -128,7 +155,7 @@ section input{
 BUSINESS PLAN
 -------------*/
 h3{
-    font-size: larger;
+    font-size: 22px;
     margin-top: 20px;
 }
 
@@ -147,10 +174,6 @@ h3{
     color: #464646;
 }
 
-.black{
-    color: black;
-}
-
 .business-plan-title{
     text-align: center;
     border-bottom: 1px solid #D0D0D3;
@@ -162,6 +185,7 @@ h3{
     flex-direction: column;
     gap: 20px;
     border-top: none;
+    margin-bottom: 20px;
 }
 
 .fa-check{
@@ -182,5 +206,30 @@ h3{
 #long-btn{
     width: 25%;
 }
+/*------------
+SECOND SECTION
+-------------*/
+.second-section{
+    margin-top: 120px;
+    display: flex;
+}
 
+.col-60{
+    max-width: 60%;
+}
+
+.col-40{
+    max-width: 40%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.trasparent-btn{
+    background-color: white;
+    color: #464646;
+    border: 1px solid #464646;
+    max-width: 50%;
+}
 
