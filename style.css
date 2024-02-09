@@ -50,16 +50,18 @@ button{
     padding: 8px;
 }
 /*------------
-    MAIN
+    HERO
 -------------*/
-main{
+section:first-child{
     background-color: #B4D0E7;
     padding: 70px;
+    margin-bottom: 100px;
 }
 
 .container-1200{
-    max-width: 63%;
+    max-width: 1200px;
     margin: auto;
+
 }
 
 h1{
@@ -71,19 +73,18 @@ h1{
     display: flex;
     margin-top: 50px;
     margin-bottom: -150px;
-    border: dashed;
 }
 
 .hero-left{
     display: flex;
     flex-direction: column;
     max-width: 35%;
-    border: dashed;
     color: #464646;
 }
 
 .hero-left *:not(p){
-    margin-top: 20px;
+    margin-top: 40px;
+    max-width: 250px;
 }
 
 .fa-arrow-down{
@@ -93,9 +94,13 @@ h1{
 
 .hero-right{
     max-width: 65%;
-    border: dashed;
 }
 
 .hero-right img{
     max-width: 100%;
 }
+/*------------
+    MAIN
+-------------*/
+
+
