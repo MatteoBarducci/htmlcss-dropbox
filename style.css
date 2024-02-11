@@ -11,6 +11,7 @@ GENERAL
 -------------*/
 body{
     font-family: "Open Sans", sans-serif;
+    color: #464646;
 }
 
 .fa-solid{
@@ -39,7 +40,15 @@ button:hover{
     transition: 0.5s;
 }
 
+.grid-30{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 
+h1,h2,h3,h4,h5,h6{
+    color: black;
+}
 /*------------
 HEADER
 -------------*/
@@ -76,14 +85,9 @@ header a{
     transition: .3s var(--_s,0s) linear,background-size .3s calc(.3s - var(--_s,0s));
 }
 
-
 header a:hover{
     --_p: 100%;
     --_s: .25s;
-}
-
-a{
-    text-decoration: none;
 }
 /*------------
 HERO
@@ -97,7 +101,6 @@ HERO
 .container-1200{
     max-width: 1200px;
     margin: auto;
-
 }
 
 h1{
@@ -142,6 +145,7 @@ FIRST SECTION
 h2{
     font-size: 35px;
     margin-bottom: 50px;
+    margin-top: 150px;
 }
 
 section input{
@@ -166,12 +170,6 @@ h3{
 
 .col-33 > *, .enterprise > *{
     padding: 6px 30px;
-}
-
-.business-plan{
-    display: flex;
-    justify-content: space-between;
-    color: #464646;
 }
 
 .business-plan-title{
@@ -232,4 +230,13 @@ SECOND SECTION
     border: 1px solid #464646;
     max-width: 50%;
 }
+/*------------
+FEATURES
+-------------*/
+.features .col-33{
+    border: none;
+}
 
+.features .col-33 > *{
+    padding: 20px 0 20px 0;
+}
