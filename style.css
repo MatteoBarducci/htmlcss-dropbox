@@ -163,12 +163,12 @@ h3{
     margin-top: 20px;
 }
 
-.col-33{
+.col-30{
     max-width: 30%;
     border: 1px solid #D0D0D3;
 }
 
-.col-33 > *, .enterprise > *{
+.col-30 > *, .enterprise > *{
     padding: 6px 30px;
 }
 
@@ -233,10 +233,116 @@ SECOND SECTION
 /*------------
 FEATURES
 -------------*/
-.features .col-33{
+.features .col-30{
     border: none;
 }
 
-.features .col-33 > *{
+.features .col-30 > *{
     padding: 20px 0 20px 0;
 }
+/*------------
+MEMBERS
+-------------*/
+.dropbox-mbrs{
+    background-color: #B4D0E7;
+    padding-bottom: 100px;
+}
+
+.team-members{
+    margin-top: 120px;
+    display: flex;
+}
+.team-members > *{
+    width:calc(100vw / 3);
+}
+
+.blocks{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.blocks > *{
+    width: calc(100vw / 6);
+    height: calc(100vw / 6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: calc(100vw / 24);
+}
+
+.blocks img{
+    filter: invert(100%);
+    
+}
+
+#designit{
+    background-color: #A2D39B;
+    border: 10px solid #D1E9CD;
+}
+
+#asu{
+    background-color: #61082B;
+}
+
+#uf{
+    background-color: #1193CE;
+}
+
+#topps{
+    background-color: #FD1C1C;
+}
+
+#wbr{
+    background-color: #D5011F;
+}
+
+#hearst{
+    background-color: #B4D0E7;
+}
+
+#lp{
+    background-color: #0D2481;
+}
+
+#cco{
+    background-color: #FED831;
+}
+
+.central-section{
+    background-color: #F5F5F5;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.central-section img{
+    width: 50%;
+}
+
+.central-section hr{
+    color: #D0D0D3;
+    max-width: 25%;
+}
+/*------------
+TRY
+-------------*/
+.try{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.try h2{
+    color: #61082B;
+    margin: 0;
+    max-width: 50%;
+}
+
+.try button{
+    align-self: center;
+    width: 25%;
+    background-color: white;
+    color: #464646;
+}
+
