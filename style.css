@@ -204,6 +204,10 @@ h3{
 #long-btn{
     width: 25%;
 }
+
+.first-section input{
+    margin-right: 10px;
+}
 /*------------
 SECOND SECTION
 -------------*/
