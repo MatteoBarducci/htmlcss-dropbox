@@ -258,6 +258,7 @@ MEMBERS
 }
 .team-members > *{
     width:calc(100vw / 3);
+    height: calc(100vw / 3);
 }
 
 .blocks{
@@ -318,6 +319,7 @@ MEMBERS
     display: flex;
     flex-direction: column;
     gap: 40px;
+    overflow-y: auto;
 }
 
 .central-section img{
