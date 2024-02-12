@@ -18,6 +18,16 @@ body{
     color: black;
 }
 
+.container-1200{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.container-1000{
+    max-width: 1000px;
+    margin: auto;
+}
+
 .black{
     color: black;
 }
@@ -49,6 +59,44 @@ button:hover{
 h1,h2,h3,h4,h5,h6{
     color: black;
 }
+
+h1{
+    font-size: 46px;
+}
+
+h2{
+    font-size: 35px;
+}
+
+.white{
+    color: white;
+}
+
+.gap-15{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.margin-bottom-l{
+    margin-bottom: 130px;
+}
+
+.margin-bottom-m{
+    margin-bottom: 60px;
+}
+
+.margin-top-l{
+    margin-top: 130px;
+}
+
+.margin-top-m{
+    margin-top: 60px;
+}
+
+.max-w-230{
+    max-width: 230px;
+}
 /*------------
 HEADER
 -------------*/
@@ -58,14 +106,13 @@ header{
     display: flex;
     justify-content: space-between;
     padding: 15px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
-.header-left{
-    display: flex;
-    align-items: center;
-}
-
-.header-right{
+.header-left, .header-right{
     display: flex;
     align-items: center;
 }
@@ -92,38 +139,22 @@ header a:hover{
 /*------------
 HERO
 -------------*/
-#hero-section{
+.hero-section{
     background-color: #B4D0E7;
     padding: 70px;
-    margin-bottom: 100px;
-}
-
-.container-1200{
-    max-width: 1200px;
-    margin: auto;
-}
-
-h1{
-    font-size: 46px;
-    display: block;
 }
 
 .hero{
     display: flex;
-    margin-top: 50px;
     margin-bottom: -150px;
 }
 
 .hero-left{
     display: flex;
     flex-direction: column;
+    gap: 50px;
     max-width: 30%;
     color: #464646;
-}
-
-.hero-left *:not(p){
-    margin-top: 40px;
-    max-width: 250px;
 }
 
 .fa-arrow-down{
@@ -137,17 +168,6 @@ h1{
 /*------------
 FIRST SECTION
 -------------*/
-.container-1000{
-    max-width: 1000px;
-    margin: auto;
-}
-
-h2{
-    font-size: 35px;
-    margin-bottom: 60px;
-    margin-top: 150px;
-}
-
 section input{
     margin-bottom: 45px;
 }
@@ -253,7 +273,6 @@ MEMBERS
 }
 
 .team-members{
-    margin-top: 120px;
     display: flex;
 }
 .team-members > *{
@@ -354,13 +373,13 @@ TRY
 /*------------
 FAQ
 -------------*/
-.FAQ > div{
+.faq > div{
     display: flex;
     justify-content: space-between;
     margin: 30px 40px 30px 0;
 }
 
-.FAQ{
+.faq{
     margin-bottom: 130px;
 }
 
@@ -368,7 +387,41 @@ FAQ
     display: none;
 }
 
-.fa-chevron-down:hover .appear{
-    display: inline-block;
+.faq > div:hover i{
+    transform: rotate(180deg);
+    transition: 0.4s;
+}
+
+.faq > div:hover + .appear{
+    display: block;
     transition: 0.5s;
 }
+
+
+/*------------
+FOOTER
+-------------*/
+footer{
+    background-color: #000;
+    color: white;
+    font-size: smaller;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+.col-footer{
+    max-width: calc(66vw / 5);
+    margin: 50px 0 50px 0;
+}
+
+.footer-container hr{
+    margin: 50px 35px 40px 0;
+}
+
